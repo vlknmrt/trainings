@@ -1,4 +1,5 @@
 // this file is for notes taken
+Source:
 https://fusion.engineering/intro-to-incremental-non-linear-dynamic-inversion-indi/
 PID:
   The proportional part of the controller is a constant multiplied by the position error, becoming larger the further the drone is pulled away from its target.
