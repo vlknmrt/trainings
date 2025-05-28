@@ -6,4 +6,8 @@ PID:
   The derivative part of the controller determines how much “damping” is applied to our system.
   The integrator is to reject any sorts of steady state offsets which can originate from unknown disturbances as well as unforeseen inaccuracies in the model.
 PID is that it is model-free. what this means is that you do not need to know the dynamic behaviour of the drone you will be flying prior to implementing the PID controller into the system.
+Why are we not using PID in our flight controller?
+So the question then becomes, how reactive and aggressive do I want to make the system?
+Example:
+Under very windy conditions, you will be experiencing very large and sudden gusts, forcing you to give the integrator larger freedom to operate. We can see this backfiring in a situation where the drone is crossing through a strong wind stream; The integrator will begin to rapidly apply a very large force to reject the disturbance, but when it exits the stream to an area without any wind force pushing against the now “filled” integrator, the drone will aggressively overshoot, leading to a potential crash.
 NDI is extremely model-dependent, where the whole point of this method is more about changing the dynamic behaviour of your system by implementing dynamics you would like your machine to have. 
