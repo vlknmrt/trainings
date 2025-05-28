@@ -1,3 +1,3 @@
 // this file is for notes taken
 PID control is model independent.
-NDI control is highly model dependent.
+NDI is extremely model-dependent, where the whole point of this method is more about changing the dynamic behaviour of your system by implementing dynamics you would like your machine to have. 
