@@ -5,7 +5,7 @@ PID:
   The proportional part of the controller is a constant multiplied by the position error, becoming larger the further the drone is pulled away from its target.
   The derivative part of the controller determines how much “damping” is applied to our system.
   The integrator is to reject any sorts of steady state offsets which can originate from unknown disturbances as well as unforeseen inaccuracies in the model.
-PID is that it is model-free. what this means is that you do not need to know the dynamic behaviour of the drone you will be flying prior to implementing the PID controller into the system.
+PID is that it is model-free. what this means is that you do not need to know the dynamic behaviour of the drone you will be flying prior to implementing the PID controller into the system so what this does is it gives you the freedom to tune each of the P, I, and D gains on a generic controller through experimentation fairly easily.
 Why are we not using PID in our flight controller?
 So the question then becomes, how reactive and aggressive do I want to make the system?
 Example:
