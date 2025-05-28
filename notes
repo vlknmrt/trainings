@@ -1,1 +1,3 @@
 // this file is for notes taken
+PID control is model independent.
+NDI control is highly model dependent.
